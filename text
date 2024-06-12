@@ -1,0 +1,9 @@
+ limit = 1
+                api_url = 'https://api.api-ninjas.com/v1/jokes?limit={}'.format(limit)
+                response = requests.get(api_url, headers={'X-Api-Key': 'QbQSNxt+T9vGGyMlwsEQuA==u3Wh919GZAs0VPf1'})
+                if response.status_code == requests.codes.ok:
+                    api_response = response.text
+                    response_data = json.loads(api_response)
+                    # Extract the joke from the response
+                    joke = response_data[0]["joke"]
+                    await ctx.send(joke)
