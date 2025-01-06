@@ -1,6 +1,3 @@
-Here’s a README file tailored for your Discord bot:
-
----
 
 # Discord Leveling and Utility Bot
 
@@ -79,6 +76,4 @@ The bot uses an SQLite database (`levels.db`) with the following schema:
 ## License
 This bot is provided as-is. Feel free to customize and adapt it to your needs.
 
----
 
-Let me know if you need any additional sections!
